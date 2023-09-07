@@ -4427,9 +4427,9 @@ menu() {
 	showInstallStatus
 	echoContent red "\n=============================================================="
 	if [[ -n "${coreInstallType}" ]]; then
-		echoContent yellow "1.重新安装"
+		echoContent yellow "1.重新安装"re-install
 	else
-		echoContent yellow "1.安装"
+		echoContent yellow "1.安装"install
 	fi
 
 	echoContent yellow "2.任意组合安装"
@@ -4440,24 +4440,24 @@ menu() {
 	fi
 
 	echoContent skyBlue "-------------------------工具管理-----------------------------"
-	echoContent yellow "4.账号管理"
-	echoContent yellow "5.更换伪装站"
-	echoContent yellow "6.更新证书"
-	echoContent yellow "7.更换CDN节点"
-	echoContent yellow "8.IPv6分流"
-	echoContent yellow "9.WARP分流"
-	echoContent yellow "10.流媒体工具"
-	echoContent yellow "11.添加新端口"
-	echoContent yellow "12.BT下载管理"
-	echoContent yellow "13.切换alpn"
-	echoContent yellow "14.域名黑名单"
+	echoContent yellow "4.账号管理"Admin
+	echoContent yellow "5.更换伪装站"Change DNS
+	echoContent yellow "6.更新证书"Update certificate
+	echoContent yellow "7.更换CDN节点"Change CDN
+	echoContent yellow "8.IPv6分流"IPV6 bypass
+	echoContent yellow "9.WARP分流" Warp Bypass
+	echoContent yellow "10.流媒体工具" Media Checking
+	echoContent yellow "11.添加新端口" Add New Port
+	echoContent yellow "12.BT下载管理" Edit BT
+	echoContent yellow "13.切换alpn" Change alpn
+	echoContent yellow "14.域名黑名单" BlackList
 	echoContent skyBlue "-------------------------版本管理-----------------------------"
-	echoContent yellow "15.core管理"
-	echoContent yellow "16.更新脚本"
-	echoContent yellow "17.安装BBR、DD脚本"
+	echoContent yellow "15.core管理" Core Management
+	echoContent yellow "16.更新脚本" Update 
+	echoContent yellow "17.安装BBR、DD脚本" Install BBR
 	echoContent skyBlue "-------------------------脚本管理-----------------------------"
-	echoContent yellow "18.查看日志"
-	echoContent yellow "19.卸载脚本"
+	echoContent yellow "18.查看日志" Log
+	echoContent yellow "19.卸载脚本" Uninstall
 	echoContent red "=============================================================="
 	mkdirTools
 	aliasInstall
